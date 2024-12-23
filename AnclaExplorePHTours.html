@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explore PH Tours</title>
+    <link rel="icon" href="images/COMPANYLOGO.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: "Afacad Flux";
+        background-color: #eae2cf;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #48311b;
+      }
+
+      .topnav a {
+        float: left;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #e3711d;
+        color: black;
+      }
+
+      .banner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-section {
+        font-size: large;
+        display: flex;
+        justify-content: space-evenly;
+        float: left;
+        margin: 50px 10px 100px;
+        padding: 5px;
+        background-color: #AB886D;
+        color: black;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 31%;
+        transition: background-color 0.3s, color 0.3s;
+        position: relative;
+      }
+
+      .main-section ul {
+        display: none;
+      }
+
+      .main-section p {
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .main-section:hover {
+        background-color: #F5F5F7;
+        color: #48311b;
+      }
+
+      .main-section:hover ul {
+        display: block;
+      }
+
+      .booknowbutton {
+        background: #48311b;
+        border: 1px solid black;
+        border-radius: 6px;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 16px;
+        min-height: 40px;
+        outline: 0;
+        padding: 12px 14px;
+      }
+
+      .booknowbutton:hover,
+      .booknowbutton:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #000000;
+      }
+
+      .booknowbutton:active {
+        opacity: 0.5;
+      }
+
+      footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #48311b;
+        color: #fff;
+      }
+
+      hr {
+        
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/explorephtours_banner.png" alt="banner" class="banner">
+
+    <nav class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#promos">Promos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section class="main-section">
+        <div id="services">
+          <p>Services Offered</p>
+          <ul>
+            <li>Island Hopping Tours</li>
+            <li>Guided City Tours</li>
+            <li>Mountain Trekking Packages</li>
+            <li>Hotel and Transport Reservations</li>
+            <li>Customized Travel Itineraries</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <div id="promos">
+          <p>Promotions</p>
+          <ul>
+            <li>"3+1 Free" group packages.</li>
+            <li>20% discount on bookings made at least a month in advance.</li>
+            <li>Special weekend rates for island hopping in Cebu.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <div>
+          <p>Popular Packages</p>
+          <ul>
+            <li><b>Manila</b>: Historic Intramuros Tour with Food Crawl</li>
+            <li><b>Cebu</b>: Whale Shark Watching and Kawasan Falls Adventure</li>
+            <li><b>Davao</b>: Mt. Apo Climbing Experience</li>
+          </ul>
+        </div>
+      </section>
+      <hr style="clear: both; margin: 20px 0;">
+      <section style="text-align: center; padding: 30px; clear: both" >
+        <h1>Book Your Next Adventure Today</h1>
+        <p>
+          Explore the Philippines like never before with our exciting packages.
+          Limited slots available for promo deals. Don't miss out!
+        </p>
+        <button class="booknowbutton" id="booknow">Book Now</button>
+      </section>
+      <hr style="clear: both; margin: 20px 0;">
+      <section style="margin: 0px 100px 0px 60px" id="contact">
+        <div style="display: flex; justify-content: normal; flex-wrap: wrap">
+          <div style="padding-right: 50px; margin-top: -10px">
+            <h3>Contact Details:</h3>
+          </div>
+          <div style="padding-right: 75px">
+            <p><b>Manila:</b><br />(+63) 123-4567</p>
+          </div>
+          <div style="padding-right: 75px">
+            <p><b>Cebu:</b><br />(+63) 234-5678</p>
+          </div>
+          <div style="padding-right: 75px">
+            <p><b>Davao:</b><br />(+63) 345-6789</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p>
+          <a href="https://www.facebook.com/" style="color: #ffff;">Facebook</a> |
+          <a href="https://www.instagram.com/" style="color: #ffff;">Instagram</a>
+        </p>
+      </div>
+      <p>Copyright 2024-2025 by Kent Zoren C. Ancla. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
