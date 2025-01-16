@@ -1,13 +1,14 @@
 
 var check = function() {
-    if(new Date(document.getElementById("end").value) == null || new Date(document.getElementById("start").value == null)){
-        document.getElementById("message").innerHTML = 'Please enter a valid date.';
-    }else{
-        const answer = ( new Date(document.getElementById("end").value) - new Date(document.getElementById("start").value))/(1000 * 60 * 60 * 24);
-        document.getElementById("message").innerHTML = 'The difference is ' + answer + ' days';
+    const startDate = new Date(document.getElementById("start").value);
+    const endDate = new Date(document.getElementById("end").value);
 
+    if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
+        document.getElementById("message").style.color = 'red';
+        document.getElementById("message").innerHTML = 'Please enter valid dates.';
+        return;
     }
-    
-    
-    
+
+    const difference = (endDate - startDate) / (1000 * 60 * 60 * 24);
+    document.getElementById("message").innerHTML = `The difference is ${difference} days.`;
 }
