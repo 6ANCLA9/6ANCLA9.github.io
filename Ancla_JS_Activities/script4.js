@@ -4,7 +4,6 @@ var check = function() {
     const endDate = new Date(document.getElementById("end").value);
 
     if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
-        document.getElementById("message").style.color = 'red';
         document.getElementById("message").innerHTML = 'Please enter valid dates.';
         return;
     }
