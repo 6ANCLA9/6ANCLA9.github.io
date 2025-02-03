@@ -1,0 +1,28 @@
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.mainbox1{
+    display: flex;
+    align-self: center;
+    flex-wrap:wrap;
+    width: 750px;
+    height: 600px;
+    background-color: red;
+}
+
+.mainbox2{
+    display: flex;
+    align-self: center;
+    flex-wrap:wrap;
+    width: 750px;
+    height: 600px;
+    background-color: rgb(44, 214, 86);
+}
+
+footer{
+    padding: 20px;
+    background-color: #11ebca;
+    width: 1460px;
+}
